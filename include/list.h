@@ -24,10 +24,11 @@ int list_add(list_t *list_ptr, void *element);
 int list_remove(list_t *list_ptr, void *element);
 list_t list_node_next(list_t list);
 list_t list_node_prev(list_t list);
-int list_rotate_next(list_t *list);
-int list_rotate_prev(list_t *list);
+int list_rotate_next(list_t *list_ptr);
+int list_rotate_prev(list_t *list_ptr);
 void *list_get(list_t list);
 void *list_next(list_t *list_ptr);
 size_t list_count(list_t list);
+int list_sort(list_t *list_ptr, int (*cmp)(void *, void *));
 
 #endif

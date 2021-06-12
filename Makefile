@@ -19,6 +19,7 @@ SRC += src/node_prev.c
 SRC += src/remove.c
 SRC += src/rotate_next.c
 SRC += src/rotate_prev.c
+SRC += src/sort.c
 
 SRC_TEST += $(DIR_TEST_TOOLS)/malloc.c
 SRC_TEST += $(DIR_TEST)/add.c
@@ -30,6 +31,7 @@ SRC_TEST += $(DIR_TEST)/node_prev.c
 SRC_TEST += $(DIR_TEST)/remove.c
 SRC_TEST += $(DIR_TEST)/rotate_next.c
 SRC_TEST += $(DIR_TEST)/rotate_prev.c
+SRC_TEST += $(DIR_TEST)/sort.c
 
 #SRC_BONUS += $(DIR_SRC)/opt_display.c
 
