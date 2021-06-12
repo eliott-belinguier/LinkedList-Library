@@ -1,0 +1,14 @@
+# Clion
+.idea/
+CMakeLists.txt
+cmake-build-debug/
+
+# Compilation
+**.o
+
+# Test
+**.txt
+
+# Unit tests
+**.gcno
+**.gcda
