@@ -16,6 +16,7 @@ Test(list_remove, normal_test)
     char *str2 = "Test2";
     char *str3 = "Test3";
     char *str4 = "Test4";
+    char *str5 = "Test5";
 
     cr_assert_eq(list_add(&list, str1), 0);
     cr_assert_eq(list_add(&list, str2), 0);
@@ -23,6 +24,7 @@ Test(list_remove, normal_test)
     cr_assert_eq(list_add(&list, str4), 0);
     cr_assert_eq(list_remove(&list, str3), 0);
     cr_assert_eq(list_remove(&list, str1), 0);
+    cr_assert_eq(list_remove(&list, str5), -1);
     current = list;
     cr_assert_eq(list_next(&current), str2);
     cr_assert_eq(list_next(&current), str4);
