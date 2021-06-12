@@ -7,13 +7,13 @@
 
 #include "list.h"
 
-int llistlib_list_rotate_prev(list_t *list)
+int llistlib_list_rotate_prev(list_t *list_ptr)
 {
-    if (!list || !*list)
+    if (!list_ptr || !*list_ptr)
         return -1;
-    *list = list_node_prev(*list);
+    *list_ptr = list_node_prev(*list_ptr);
     return 0;
 }
 
-int list_rotate_prev(list_t *list)
+int list_rotate_prev(list_t *list_ptr)
 __attribute__ ((weak, alias ("llistlib_list_rotate_prev")));
